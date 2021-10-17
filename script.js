@@ -9,8 +9,8 @@ let weather = {
         )
           .then((response) => {
             if (!response.ok) {
-              alert("Not Supported by Browser");
-              throw new Error("Not Supported by Browser");
+              alert("Not Supported by Browser. Recommended browser: Microsoft Edge");
+              throw new Error("Not Supported by Browser. Recommended browser: Microsoft Edge");
             }
             return response.json();
           })
